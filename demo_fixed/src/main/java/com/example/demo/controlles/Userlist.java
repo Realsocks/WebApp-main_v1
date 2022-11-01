@@ -23,7 +23,7 @@ public class Userlist {
         List<Employees> Userlist = userlistRepo.findAll();
         model.addAttribute("Userlist", Userlist);
 
-        return("Employeeч");
+        return("Employee");
     }
 
 }
