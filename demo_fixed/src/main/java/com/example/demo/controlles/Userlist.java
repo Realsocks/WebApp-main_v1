@@ -21,7 +21,7 @@ public class Userlist {
     @GetMapping("/Employee")
     public String UserList(Model model){
         List<Employees> Userlist = userlistRepo.findAll();
-        model.addAttribute("Userlist", Userlist);
+        model.addAttribute("Employee", Userlist);
 
         return("Employee");
     }
