@@ -41,11 +41,7 @@ public class MOdul {
     }
 
 
-    @PostMapping("/index")
-    public void deleteById(@RequestParam int id, HttpServletRequest request){
-        nameRepo.deleteById(id);
 
-    }
 
 
 }
