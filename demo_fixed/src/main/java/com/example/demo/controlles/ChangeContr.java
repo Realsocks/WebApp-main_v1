@@ -29,7 +29,8 @@ public class ChangeContr {
         @RequestParam String secondname,
         @RequestParam String sex,
         @RequestParam String dateofbirth,
-        @RequestParam String Work,Model model){
+        @RequestParam String Work,
+                                 @RequestParam String number, Model model){
 
 
         Employees emp = changeRepo.findById(id).orElseThrow();
@@ -39,6 +40,7 @@ public class ChangeContr {
         emp.setSex(sex);
         emp.setDateofbirth(dateofbirth);
         emp.setWork(Work);
+        emp.setNumber(number);
 
         changeRepo.save(emp);
 

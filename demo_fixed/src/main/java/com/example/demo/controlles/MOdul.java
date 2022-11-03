@@ -31,8 +31,9 @@ public class MOdul {
                            @RequestParam String secondname,
                            @RequestParam String sex,
                            @RequestParam String dateofbirth,
-                           @RequestParam String Work,Model model) {
-        Employees employees = new Employees(name, lastname, secondname,sex, dateofbirth, Work);
+                           @RequestParam String Work,
+                           @RequestParam String number, Model model) {
+        Employees employees = new Employees(name, lastname, secondname,sex, dateofbirth, Work, number);
         nameRepo.save(employees);
 
         return "index";

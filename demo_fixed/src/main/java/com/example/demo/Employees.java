@@ -39,10 +39,21 @@ public class Employees {
     private String sex;
     @Column
     private String dateofbirth;
+    @Column
+    private String number;
 
 
 
     //геттеры и сеттеры
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
     public String getSecondname() {
         return secondname;
     }
@@ -99,7 +110,7 @@ public class Employees {
         this.lastname = lastname;
     }
 
-    public Employees(String name, String lastname, String secondname, String work, String sex, String dateofbirth) {
+    public Employees(String name, String lastname, String secondname, String work, String sex, String dateofbirth, String number) {
 
         this.name = name;
         this.lastname = lastname;
@@ -107,6 +118,8 @@ public class Employees {
         Work = work;
         this.sex = sex;
         this.dateofbirth = dateofbirth;
+        this.number = number;
+
     }
     public Employees() {}
 }

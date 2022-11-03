@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="03" author="Realsocks">
+        <comment>Inserting Employee</comment>
+        <insert tableName="employee">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Kirill"/>
+            <column name="secondname" value="Zheltov"/>
+            <column name="lastname" value="Romanovich"/>
+            <column name="sex" value="Male"/>
+            <column name="Work" value="Work"/>
+            <column name="dateofbirth" value="17/05/2003"/>
+            <column name="number" value="0000000"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="Kirill1"/>
+            <column name="secondname" value="Zheltov1"/>
+            <column name="lastname" value="Romanovich1"/>
+            <column name="sex" value="Male1"/>
+            <column name="Work" value="Work1"/>
+            <column name="dateofbirth" value="17/05/20031"/>
+            <column name="number" value="00000001"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="Kirill2"/>
+            <column name="secondname" value="Zheltov2"/>
+            <column name="lastname" value="Romanovich2"/>
+            <column name="sex" value="Male2"/>
+            <column name="Work" value="Work2"/>
+            <column name="dateofbirth" value="17/05/20032"/>
+            <column name="number" value="00000002"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="Kirill3"/>
+            <column name="secondname" value="Zheltov3"/>
+            <column name="lastname" value="Romanovich3"/>
+            <column name="sex" value="Male3"/>
+            <column name="Work" value="Work3"/>
+            <column name="dateofbirth" value="17/05/20033"/>
+            <column name="number" value="00000003"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="Kirill4"/>
+            <column name="secondname" value="Zheltov4"/>
+            <column name="lastname" value="Romanovich4"/>
+            <column name="sex" value="Male4"/>
+            <column name="Work" value="Work4"/>
+            <column name="dateofbirth" value="17/05/20034"/>
+            <column name="number" value="00000004"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
