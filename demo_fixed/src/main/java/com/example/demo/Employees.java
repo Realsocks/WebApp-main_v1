@@ -18,10 +18,7 @@ import static java.lang.Integer.parseInt;
 @Entity // This tells Hibernate to make a table out of this class
 @Table(name = "name")
 public class Employees {
-    //пустой конструктор
-
-
-    //констуркторы
+    
 
 
     @Id
