@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workers</title>
+</head>
+<body>
+<a href="index"> Вернуться на главную страницу </a><br>
+<a href="change"> Изменить работника</a><br>
+<a href="index"> Добавить нового работника</a><br>
+<a href="delete">Удалить работника</a><br>
+<table class="sortable">
+  <tr>
+    <th>ID</th>
+    <th>Имя работника</th>
+    <th>Фамилия работника</th>
+    <th>Отчество работника</th>
+    <th>Дата рождения работника</th>
+    <th>Должность работника</th>
+    <th>Пол работника</th>
+    <th>Номер телефона работника</th>
+  </tr>
+  <tr th:each="Employee:${Employee}">
+    <td th:text="${Employee.id}"></td>
+    <td th:text="${Employee.name}"> </td>
+    <td th:text="${Employee.secondname}"></td>
+    <td th:text="${Employee.lastname}"></td>
+    <td th:text="${Employee.sex}"></td>
+    <td th:text="${Employee.dateofbirth}"></td>
+    <td th:text="${Employee.Work}"></td>
+    <td th:text="${Employee.number}"></td>
+
+  </tr>
+</table>
+
+</body>
+</html>
