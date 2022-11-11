@@ -1,13 +1,15 @@
 package com.example.demo.controlles;
 
-import com.example.demo.Employees;
+import com.example.demo.Entitys.Employees;
 import com.example.demo.repos.EmployeeRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class MOdul {
+    @Autowired
     EmployeeRepo nameRepo;
 
     public MOdul(EmployeeRepo nameRepo) {
