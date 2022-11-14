@@ -105,11 +105,17 @@
 			<version>42.5.0</version>
 			<scope>runtime</scope>
 		</dependency>
+
 		<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-test</artifactId>
 		<scope>test</scope>
 	</dependency>
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -124,6 +130,12 @@
 
 
 	<build>
+		<resources>
+
+		<resource>
+			<directory>src/main/resources/templates</directory>
+		</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
