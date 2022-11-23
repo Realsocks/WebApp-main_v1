@@ -1,6 +1,6 @@
 package com.example.demo.repos;
 
-import com.example.demo.Employees;
+import com.example.demo.Entitys.Employees;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

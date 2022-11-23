@@ -1,6 +1,6 @@
 package com.example.demo.controlles;
 
-import com.example.demo.Employees;
+import com.example.demo.Entitys.Employees;
 import com.example.demo.repos.EmployeeRepo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
