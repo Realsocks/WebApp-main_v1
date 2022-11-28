@@ -1,7 +1,7 @@
 package com.example.demo.Entitys;
 
 
-import lombok.AllArgsConstructor;
+/*import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -80,3 +80,5 @@ public class Workers {
         this.dateofbirth = dateofbirth;
     }
 }
+
+ */

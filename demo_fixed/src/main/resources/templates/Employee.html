@@ -19,6 +19,7 @@
     <th>Должность работника</th>
     <th>Пол работника</th>
     <th>Номер телефона работника</th>
+    <th>Действия</th>
   </tr>
   <tr th:each="Employee:${Employee}">
     <td th:text="${Employee.id}"></td>
@@ -29,8 +30,18 @@
     <td th:text="${Employee.dateofbirth}"></td>
     <td th:text="${Employee.Work}"></td>
     <td th:text="${Employee.number}"></td>
+    <td th:button="${Employee}"><button type="submit" >Удалить</button></td>
+    <td th:button="${Employee}"><button type="submit" >Изменить</button></td>
+
+
+
+
+
+
+
 
   </tr>
+
 </table>
 
 </body>

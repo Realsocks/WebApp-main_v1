@@ -1,6 +1,6 @@
 package com.example.demo.repos;
 
-import com.example.demo.Entitys.Workers;
+/*import com.example.demo.Entitys.Workers;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.repository.init.Jackson2RepositoryPopulatorFactoryBean;
@@ -15,3 +15,5 @@ public class WorkersRepo {
         return factory;
     }
 }
+/*
+ */

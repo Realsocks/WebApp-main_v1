@@ -5,10 +5,20 @@
     <title>Delete Employee</title>
 </head>
 <body>
-<fieldset>
-    <legend>User Id</legend>
-    <button type="submit">Удалить</button>
-</fieldset>
-<a href="/add.html"> Add new user</a>
+<form action="/delete" method="post">
+    <label>
+        User ID
+        <input type="text" name="id">
+    </label><br>
+    <button type="submit" >Отправить</button>
+</form>
+
+
+<a href="/index"> Добавить работника(Вернуться на главную)</a><br><br>
+<a href="/change"> Изменить работника</a><br>
+<a href="/Employee"> Список работников </a><br>
+
+
+
 </body>
 </html>

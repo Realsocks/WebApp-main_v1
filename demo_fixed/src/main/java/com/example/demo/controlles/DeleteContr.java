@@ -25,9 +25,12 @@ public class DeleteContr {
     }
 
     @PostMapping("/delete")
-    public void deleteById(@RequestParam int id, HttpServletRequest request){
+    public String deleteById(@RequestParam int id, HttpServletRequest request){
 
         delrepo.deleteById(id);
+        return "delete";
+
+
 
     }
 
