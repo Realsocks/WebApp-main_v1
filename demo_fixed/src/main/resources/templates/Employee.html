@@ -30,7 +30,10 @@
     <td th:text="${Employee.dateofbirth}"></td>
     <td th:text="${Employee.Work}"></td>
     <td th:text="${Employee.number}"></td>
-    <td th:button="${Employee}"><button type="submit" >Удалить</button></td>
+    <form action="/del" method="post">
+      <td th:button="${Employee}"><button type="submit" >Удалить</button></td>
+    </form>
+
     <td th:button="${Employee}"><button type="submit" >Изменить</button></td>
 
 
