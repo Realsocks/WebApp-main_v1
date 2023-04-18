@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="/startbootstrap-modern-business-1.0.5/css/bootstrap.css">
+<script src="/startbootstrap-modern-business-1.0.5/js/bootstrap.js"></script>
 <head>
+
     <meta charset="UTF-8">
     <title>Workers</title>
 </head>
@@ -9,17 +12,17 @@
 <a href="change"> Изменить работника</a><br>
 <a href="index"> Добавить нового работника</a><br>
 <a href="delete">Удалить работника</a><br>
-<table class="sortable">
+<table class="table table-hover">
   <tr>
-    <th>ID</th>
-    <th>Имя работника</th>
-    <th>Фамилия работника</th>
-    <th>Отчество работника</th>
-    <th>Дата рождения работника</th>
-    <th>Должность работника</th>
-    <th>Пол работника</th>
-    <th>Номер телефона работника</th>
-    <th>Действия</th>
+    <th>ID   </th>
+    <th>Имя работника   </th>
+    <th>Фамилия работника   </th>
+    <th>Отчество работника  </th>
+    <th>Дата рождения работника   </th>
+    <th>Должность работника   </th>
+    <th>Пол работника   </th>
+    <th>Номер телефона работника   </th>
+    <th>Действия   </th>
   </tr>
   <tr th:each="Employee:${Employee}">
     <td th:text="${Employee.id}"></td>
@@ -30,8 +33,8 @@
     <td th:text="${Employee.dateofbirth}"></td>
     <td th:text="${Employee.Work}"></td>
     <td th:text="${Employee.number}"></td>
-    <form action="/del" method="post">
-      <td th:button="${Employee}"><button type="submit" >Удалить</button></td>
+    <form action="/del/Employee/{id}" method="post">
+      <td th:button="${Employee.id}"><button type="submit" >Удалить</button></td>
     </form>
 
     <td th:button="${Employee}"><button type="submit" >Изменить</button></td>
