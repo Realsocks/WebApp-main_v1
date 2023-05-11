@@ -17,18 +17,18 @@ public class DeleteContr {
         this.delrepo = delrepo;
     }
 
-    @RequestMapping("/delete")
+    @RequestMapping("/deletE")
     public String saveEmployee(Model model) {
-        return "delete";
+        return "deletE";
 
 
     }
 
-    @PostMapping("/delete")
+    @PostMapping("/deletE")
     public String deleteById(@RequestParam int id, HttpServletRequest request){
 
         delrepo.deleteById(id);
-        return "delete";
+        return "deletE";
 
 
 

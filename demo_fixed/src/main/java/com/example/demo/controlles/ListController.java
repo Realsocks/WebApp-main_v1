@@ -2,6 +2,7 @@ package com.example.demo.controlles;
 
 import com.example.demo.Entitys.Employees;
 import com.example.demo.repos.EmployeeRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class ListController {
-    EmployeeRepo listrepo;
+
+    @Autowired
+    private EmployeeRepo listrepo;
 
     public ListController(EmployeeRepo listrepo){
         this.listrepo = listrepo;
@@ -25,15 +28,26 @@ public class ListController {
         return "Employee";
 
     }*/
-    @PostMapping( value = "/del/Employee/{id}")
+    /*@PostMapping( value = "/del/Employee/{id}")
     @ResponseBody
     public String Delete(@PathVariable(value="id") long id, @RequestParam(required = false) Integer Employees, Model model) {
         Employees post = listrepo.findById((int) id).orElseThrow();
         listrepo.deleteById((int) id);
+        System.out.println(id);
 
         return "";
 
+    }*/
+    public void delete(Integer id) {
+        listrepo.deleteById(id);
     }
+
+    @PostMapping("/delete")
+    public String deleteCustomerForm(@RequestParam Integer id) {
+        listrepo.deleteById(id);
+        return "redirect:/";
+    }
+
 
 
 }

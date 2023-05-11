@@ -18,11 +18,6 @@ import static java.lang.Integer.parseInt;
 @Entity // This tells Hibernate to make a table out of this class
 @Table(name = "name")
 public class Employees {
-    //пустой конструктор
-
-
-    //констуркторы
-
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -110,6 +105,7 @@ public class Employees {
         this.lastname = lastname;
     }
 
+    //констуркторы
     public Employees(String name, String lastname, String secondname, String work, String sex, String dateofbirth, String number) {
 
         this.name = name;
@@ -121,6 +117,7 @@ public class Employees {
         this.number = number;
 
     }
+    //пустой конструктор
     public Employees() {
 
     }

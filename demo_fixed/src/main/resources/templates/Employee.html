@@ -11,7 +11,7 @@
 <a href="index"> Вернуться на главную страницу </a><br>
 <a href="change"> Изменить работника</a><br>
 <a href="index"> Добавить нового работника</a><br>
-<a href="delete">Удалить работника</a><br>
+<a href="deletE">Удалить работника</a><br>
 <table class="table table-hover">
   <tr>
     <th>ID   </th>
@@ -33,22 +33,14 @@
     <td th:text="${Employee.dateofbirth}"></td>
     <td th:text="${Employee.Work}"></td>
     <td th:text="${Employee.number}"></td>
-    <form action="/del/Employee/{id}" method="post">
-      <td th:button="${Employee.id}"><button type="submit" >Удалить</button></td>
-    </form>
+
+    <td>
+    <a href="/delete?id=${Employee.id}">Delete</a>
+    </td>
 
     <td th:button="${Employee}"><button type="submit" >Изменить</button></td>
-
-
-
-
-
-
-
-
   </tr>
 
 </table>
-
 </body>
 </html>
